@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+  //  background-image: url("kipur3.jpg");
+ //   background-position: center;
+    background-size: cover;
+     margin: 0px;
+}
+    </style>
+</head>
+<body>
+  
+<img src="Images/HD_transparent_picture.png" height="326" width="300">
+
+<br>
+
+ <iframe frameborder="0" height="530" width="360" scrolling="no" src="https://ticker.mivzakim.net/ticker/filter/3089?fontsize=20&fontcolor=ff0000&bgcolor=ffffff&smooth=yes&spacing=no&linkunderline=no&views=no&snttad=yes&dates=no"></iframe>
+
+
+    <script type="text/javascript">
+        var i = 0;
+var images = [];
+var slideTime = 7000; // 7 seconds
+
+images[0] = 'Images/Roshashana1.jpg';
+images[1] = 'Images/Roshashana2.jpg';
+images[2] = 'Images/AvBaitSlide.png';
+
+function changePicture() {
+    document.body.style.backgroundImage = "url(" + images[i] + ")";
+
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout(changePicture, slideTime);
+}
+
+window.onload = changePicture;
+    </script>
+
+
+
+
+</body>
+</html>

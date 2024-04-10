@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    background-size: cover;
+     margin: 0px;
+}
+    </style>
+</head>
+<body>
+  
+<img src="Images/HD_transparent_picture.png" height="343" width="300">
+
+<br>
+
+ <iframe frameborder="0" height="513" width="399" scrolling="no" src="https://ticker.mivzakim.net/ticker/filter/2794?fontsize=20&fontcolor=ff0000&bgcolor=000000&smooth=yes&spacing=no&linkunderline=no&views=no&snttad=yes"></iframe>
+
+
+    <script type="text/javascript">
+        var i = 0;
+var images = [];
+var slideTime = 8000; // 8 seconds
+
+images[0] = 'Images/Zikaron1.jpg';
+images[1] = 'Images/Zikaron4.jpg';
+images[2] = 'Images/AvBaitSlide.png';
+
+function changePicture() {
+    document.body.style.backgroundImage = "url(" + images[i] + ")";
+
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout(changePicture, slideTime);
+}
+
+window.onload = changePicture;
+    </script>
+
+
+
+
+</body>
+</html>
